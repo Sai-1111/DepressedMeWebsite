@@ -13,8 +13,10 @@
 .abt-us, .intro, .pred{
     background-color: #33333344;;
     border-radius: 20px;
-    padding: 20px;
+    padding: 80px;
+    position: relative;
 }
+
 
 .hed {
     font-size: 3.5em;
@@ -44,6 +46,8 @@ a:active {
     background-color: #333;
     color: #fff;
     padding: 20px;
+    position:fixed;
+    width: 100%;
 }
   
 .head h1 {
@@ -63,7 +67,7 @@ h2 {
 .intro p, .abt-us p, .pred p {
     font-size:large;
     font-weight: 500;
-    color: #363636;
+    color: #363636c6;
     width: 80%;
 }
 

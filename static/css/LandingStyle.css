@@ -1,0 +1,12 @@
+button{
+    background-color: black;
+    color: white;
+    border-radius: 20px;   
+}
+button:hover{
+    background-color: blue;
+}
+button:active{
+    background-color: aqua;
+    color: red;
+}

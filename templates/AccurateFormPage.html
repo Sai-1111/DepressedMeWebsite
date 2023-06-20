@@ -1,0 +1,719 @@
+<html>
+
+<head>
+    <title>Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/AccurateFormStyle.css') }}">
+    <script src="{{ url_for('static', filename='js/AccurateFormScript.js') }}"></script>
+</head>
+
+<body>
+    <br>
+    <div class="container" style="border: 5px solid black;">
+        <form method="post" action="/AccurateFormPage.html">
+            <br>
+            <h1 class="revealUp">Digital Well-being Assessment</h1>
+            <br><br>
+            <div class="row revealUp">
+                <div class="col-3">
+                    <label for="Name">
+                        Enter your name :
+                    </label>
+                </div>
+                <div class="col-9">
+                    <input required name="name" type="text" placeholder="Name" style="background-color: rgb(71, 65, 65); border-radius: 5px; color: white;">
+                </div>
+            </div>
+            <br>
+            <div class="row revealUp">
+                <div class="col-3">
+                    <label for="Gender">
+                        Select your gender:
+                    </label>
+                </div>
+                <div class="col-9">
+                    <select class="gen" name="gender" style="background-color: rgb(71, 65, 65); border-radius: 5px; color: white;">
+                        <option>Select</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Others">Others</option>
+                    </select>
+                </div>
+            </div>
+            <br>
+            <div class="row revealUp">
+                <div class="col-3">
+                    <label for="email">
+                        Enter your email id:
+                    </label>
+                </div>
+                <div class="col-9">
+                    <input required name="email" type="email" placeholder="abc@gmail.com" style="background-color: rgb(71, 65, 65); border-radius: 5px; color: white;">
+                </div>
+            </div>
+            <br><br><br>
+            <div class="row revealUp" id="text">
+                <div class="col-12">
+                    This questionnaire consists of 35 statements. After reading each statement carefully, based upon the
+                    5-point Likert scale,
+                    where severity increases as number increases, please select the response (0, 1, 2, 3, 4 or 5) which
+                    best describes you.
+                    Be sure to read all the statements carefully before making your choice. The statements refer to
+                    offline situations or actions
+                    unless otherwise specified.
+                </div>
+            </div>
+            <br><br><br>
+            <div class="revealUp">
+                <a href="#ia" style="text-decoration: none;">Internet Addiction</a><br><br>
+            </div>
+            <div class="revealUp">
+                <a href="#dep" style="text-decoration: none;">Depression</a><br><br>
+            </div>
+            <div class="revealUp">
+                <a href="#anx" style="text-decoration: none;">Anxiety</a><br><br><br><br><br><br><br>
+            </div>
+            <h2 id="ia" class="revealUp">Internet Addiction</h2>
+            <br>
+            <div class="row revealUp">
+                <div class="col-10">
+                    <label for="i1">
+                        How often do you stay online longer than you intended?
+                    </label>
+                </div>
+                <div class="col-2">
+                    <select class="sel" name="i1">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+            </div>
+            <br>
+            <div class="row revealUp">
+                <div class="col-10">
+                    <label for="i2">
+                        How often do you neglect household chores to spend more time online?
+                    </label>
+                </div>
+                <div class="col-2">
+                    <select class="sel" name="i2">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+            </div>
+            <br>
+            <div class="row revealUp">
+                <div class="col-10">
+                    <label for="i3">
+                        How long do you spend time online with your partner?
+                    </label>
+                </div>
+                <div class="col-2">
+                    <select class="sel" name="i3">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+            </div>
+            <br>
+            <div class="row revealUp">
+                <div class="col-10">
+                    <label for="i4">
+                        How often do you form new relationship with fellow online users?
+                    </label>
+                </div>
+                <div class="col-2">
+                    <select class="sel" name="i4">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+            </div>
+            <br>
+            <div class="row revealUp">
+                <div class="col-10">
+                    <label for="i5">
+                        How often do others complaint about the amount of time you spend online?
+                    </label>
+                </div>
+                <div class="col-2">
+                    <select class="sel" name="i5">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+            </div>
+            <br>
+            <div class="row revealUp">
+                <div class="col-10">
+                    <label for="i6">
+                        How long do you spend time online with your partner?
+                    </label>
+                </div>
+                <div class="col-2">
+                    <select class="sel" name="i6">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+            </div>
+            <br>
+            <div class="row revealUp">
+                <div class="col-10">
+                    <label for="i7">
+                        How often do you check your email before something else that you need to do?
+                    </label>
+                </div>
+                <div class="col-2">
+                    <select class="sel" name="i7">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+            </div>
+            <br>
+            <div class="row revealUp">
+                <div class="col-10">
+                    <label for="i8">
+                        How often does your productivity suffer because of the Internet?
+                    </label>
+                </div>
+                <div class="col-2">
+                    <select class="sel" name="i8">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+            </div>
+            <br>
+            <div class="row revealUp">
+                <div class="col-10">
+                    <label for="i9">
+                        How often do you become secretive when anyone asks you what you do online?
+                    </label>
+                </div>
+                <div class="col-2">
+                    <select class="sel" name="i9">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+            </div>
+            <br>
+            <div class="row revealUp">
+                <div class="col-10">
+                    <label for="i10">
+                        How often do you block out disturbing thoughts about your life with soothing thoughts of the
+                        Internet?
+                    </label>
+                </div>
+                <div class="col-2">
+                    <select class="sel" name="i10">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+            </div>
+            <br>
+            <div class="row revealUp">
+                <div class="col-10">
+                    <label for="i11">
+                        How often do you find yourself anticipating when you will go online again?
+                    </label>
+                </div>
+                <div class="col-2">
+                    <select class="sel" name="i11">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+            </div>
+            <br>
+            <div class="row revealUp">
+                <div class="col-10">
+                    <label for="i12">
+                        How often do you fear that life without the Internet would be boring, empty, and joyless?
+                    </label>
+                </div>
+                <div class="col-2">
+                    <select class="sel" name="i12">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+            </div>
+            <br>
+            <div class="row revealUp">
+                <div class="col-10">
+                    <label for="i13">
+                        How often do you snap, yell, or act annoyed if someone bothers you while you are online?
+                    </label>
+                </div>
+                <div class="col-2">
+                    <select class="sel" name="i13">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+            </div>
+            <br>
+            <div class="row revealUp">
+                <div class="col-10">
+                    <label for="i14">
+                        How often do you lose sleep due to being online?
+                    </label>
+                </div>
+                <div class="col-2">
+                    <select class="sel" name="i14">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+            </div>
+            <br>
+            <div class="row revealUp">
+                <div class="col-10">
+                    <label for="i15">
+                        How often do you feel preoccupied with the Internet when offline, or fantasize about being
+                        online?
+                    </label>
+                </div>
+                <div class="col-2">
+                    <select class="sel" name="i15">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+            </div>
+            <br>
+            <div class="row revealUp">
+                <div class="col-10">
+                    <label for="i16">
+                        How often do you find yourself saying "just a few more minutes" when online?
+                    </label>
+                </div>
+                <div class="col-2">
+                    <select class="sel" name="i16">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+            </div>
+            <br>
+            <div class="row revealUp">
+                <div class="col-10">
+                    <label for="i17">
+                        How often do you try to cut down the amount of time you spend online and fail?
+                    </label>
+                </div>
+                <div class="col-2">
+                    <select class="sel" name="i17">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+            </div>
+            <br>
+            <div class="row revealUp">
+                <div class="col-10">
+                    <label for="i18">
+                        How often do you try to hide how long you've been online?
+                    </label>
+                </div>
+                <div class="col-2">
+                    <select class="sel" name="i18">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+            </div>
+            <br>
+            <div class="row revealUp">
+                <div class="col-10">
+                    <label for="i19">
+                        How often do you choose to spend more time online over going out with others?
+                    </label>
+                </div>
+                <div class="col-2">
+                    <select class="sel" name="i19">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+            </div>
+            <br>
+            <div class="row revealUp">
+                <div class="col-10">
+                    <label for="i20">
+                        How often do you feel depressed, moody or nervous when you are offline?
+                    </label>
+                </div>
+                <div class="col-2">
+                    <select class="sel" name="i20">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+            </div>
+            <br><br><br><br>
+            <h2 id="dep" class="revealUp">Depression</h2><br>
+            <div class="row revealUp">
+                <div class="col-10">
+                    <label for="d1">
+                        How often do you feel down, depressed or hopless?
+                    </label>
+                </div>
+                <div class="col-2">
+                    <select class="sel" name="d1">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+            </div>
+            <br>
+            <div class="row revealUp">
+                <div class="col-10">
+                    <label for="d2">
+                        How often do you feel troubled with sleep?
+                    </label>
+                </div>
+                <div class="col-2">
+                    <select class="sel" name="d2">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+            </div>
+            <br>
+            <div class="row revealUp">
+                <div class="col-10">
+                    <label for="d3">
+                        How frequently do you feel fatigued?
+                    </label>
+                </div>
+                <div class="col-2">
+                    <select class="sel" name="d3">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+            </div>
+            <br>
+            <div class="row revealUp">
+                <div class="col-10">
+                    <label for="d4">
+                        How frequently do you have a poor appetite or overeat?
+                    </label>
+                </div>
+                <div class="col-2">
+                    <select class="sel" name="d4">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+            </div>
+            <br>
+            <div class="row revealUp">
+                <div class="col-10">
+                    <label for="d5">
+                        How frequently do you feel like a failure?
+                    </label>
+                </div>
+                <div class="col-2">
+                    <select class="sel" name="d5">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+            </div>
+            <br>
+            <div class="row revealUp">
+                <div class="col-10">
+                    <label for="d6">
+                        How often do you struggle with concentrating in class or at work?
+                    </label>
+                </div>
+                <div class="col-2">
+                    <select class="sel" name="d6">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+            </div>
+            <br>
+            <div class="row revealUp">
+                <div class="col-10">
+                    <label for="d7">
+                        How often do you feel sleepy while working?
+                    </label>
+                </div>
+                <div class="col-2">
+                    <select class="sel" name="d7">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+            </div>
+            <br>
+            <div class="row revealUp">
+                <div class="col-10">
+                    <label for="d8">
+                        How often do you think you'd be better off dead?
+                    </label>
+                </div>
+                <div class="col-2">
+                    <select class="sel" name="d8">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+            </div>
+            <br><br><br><br>
+            <h2 id="anx" class="revealUp">Anxiety</h2><br>
+            <div class="row revealUp">
+                <div class="col-10">
+                    <label for="a1">
+                        How often do you feel nervous, anxious or on edge?
+                    </label>
+                </div>
+                <div class="col-2">
+                    <select class="sel" name="a1">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+            </div>
+            <br>
+            <div class="row revealUp">
+                <div class="col-10">
+                    <label for="a2">
+                        How often do you feel like you can't stop worrying?
+                    </label>
+                </div>
+                <div class="col-2">
+                    <select class="sel" name="a2">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+            </div>
+            <br>
+            <div class="row revealUp">
+                <div class="col-10">
+                    <label for="a3">
+                        How often do you feel like you're worrying too much?
+                    </label>
+                </div>
+                <div class="col-2">
+                    <select class="sel" name="a3">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+            </div>
+            <br>
+            <div class="row revealUp">
+                <div class="col-10">
+                    <label for="a4">
+                        How often do you have trouble relaxing?
+                    </label>
+                </div>
+                <div class="col-2">
+                    <select class="sel" name="a4">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+            </div>
+            <br>
+            <div class="row revealUp">
+                <div class="col-10">
+                    <label for="a5">
+                        How often do you find it hard to sit still?
+                    </label>
+                </div>
+                <div class="col-2">
+                    <select class="sel" name="a5">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+            </div>
+            <br>
+            <div class="row revealUp">
+                <div class="col-10">
+                    <label for="a6">
+                        How often do you get easily annoyed?
+                    </label>
+                </div>
+                <div class="col-2">
+                    <select class="sel" name="a6">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+            </div>
+            <br>
+            <div class="row revealUp">
+                <div class="col-10">
+                    <label for="a7">
+                        How often do you get afraid that something awful might happen?
+                    </label>
+                </div>
+                <div class="col-2">
+                    <select class="sel" name="a7">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+            </div>
+            <br>
+            <button type="submit" style="text-decoration: none;" value="Submit" id="but"
+                class="btn btn-lg revealUp">Submit</button>
+        </form>
+    </div>
+    <br>
+</body>
+</html>

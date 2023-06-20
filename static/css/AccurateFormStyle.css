@@ -1,0 +1,87 @@
+label {
+    color: rgba(255, 255, 255);
+}
+h2 {
+    font-weight: 750;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(86, 250, 168);
+}
+
+pre {
+    color: white;
+}
+
+a {
+    color: white;
+    background-color: rgb(78, 78, 78);
+    padding: 5px 8px;
+    border-radius: 5px;
+    font-size:large;
+}
+
+a:hover {
+    color: black;
+    background-color: white;
+}
+
+a:active {
+    color:black;
+    background-color: rgb(86, 250, 168);
+}
+
+#but{
+    color: white;
+    background-color: rgb(78, 78, 78);
+    border-radius: 5px;
+    font-size:large;
+    margin-left: 600px;
+}
+
+#but:hover{
+    color: black;
+    background-color: white;
+}
+
+#but:active{
+    color:black;
+    background-color: rgb(86, 250, 168);
+}
+
+#text{
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 800;
+    font-family:cursive;
+    color: rgb(200, 184, 184);
+    -webkit-text-stroke-color: rgb(14, 13, 13); 
+    -webkit-text-stroke-width: 2px;
+}
+
+body {
+    background: url("https://cdn.discordapp.com/attachments/1091705966040453172/1119592518078697512/Untitled-1.jpg");
+    background-color: rgb(99, 99, 99);
+    background-size: relative;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.55);
+    font-size:large;
+    font-weight: 550;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.revealUp {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity 1.5s ease-out, transform 1s ease-out;
+}
+
+.sel{
+    background-color: rgb(71, 65, 65); 
+    border-radius: 5px; 
+    color: white;
+}

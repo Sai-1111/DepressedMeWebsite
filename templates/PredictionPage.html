@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Predictor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/PredictionStyle.css') }}">
+    <script src="{{ url_for('static', filename='js/PredictionScript.js') }}"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <br>
+        <div class="head">
+            <b style="color: red; font-size: 44px; -webkit-text-stroke-color: black; -webkit-text-stroke-width: 2px;">
+                Anxiety and
+            </b>
+            <b style="color: white; font-size: 44px; -webkit-text-stroke-color: black; -webkit-text-stroke-width: 2px;">
+                Depression Predictor
+            </b>
+        </div>
+        <br><br>
+        <label for="disease" class ="lineUp"><a style="color: white;">
+                Select which you want predict:
+            </a></label>
+        <br><br>
+        <button onclick="myAnxiety()" type="button" id="anx_button" style="margin-left: 100px;"
+            class="btn btn-secondary btn-lg lineUp" style="width: fit-content;" name="anx_button">
+            Anxiety</button>
+        <button onclick="myDepression()" type="button" id="dep_button" class="btn btn-secondary btn-lg lineUp"
+            style="width: fit-content;" name="dep_button">
+            Depression</button>
+        <br><br><br>
+
+
+        <div id=anxit style="display:none;" class ="lineUp">
+            <form method="post">
+
+                <input type="hidden" name="AnxbuttonClicked" id="AnxbuttonClicked" value="false">
+                <input type="hidden" name="DepbuttonClicked" id="DepbuttonClicked" value="false">
+
+                <div class="row">
+                    <div class="col-9">
+                        <a style="color: white; font-weight: 1000;">
+                            How much will you rate your Internet Addiction
+                        </a>
+                    </div>
+                    <div class="col-3">
+                        <select name="intval"
+                            style="border-radius: 5px; color: white; background-color: rgb(82, 80, 80);">
+                            <option>Normal</option>
+                            <option>Mild</option>
+                            <option>Moderate</option>
+                            <option>Severe</option>
+                        </select>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-9">
+                        <a style="color: white;font-weight: 1000;">
+                            How much will you rate your Depression
+                        </a>
+                    </div>
+                    <div class="col-3">
+                        <select name="depval"
+                            style="border-radius: 5px; color: white; background-color: rgb(82, 80, 80);">
+                            <option>Normal</option>
+                            <option>Mild</option>
+                            <option>Moderate</option>
+                            <option>Severe</option>
+                        </select>
+                    </div>
+                </div>
+                <br><br><br><br>
+                <input class="btn btn-lg btn-secondary" type="submit" value="Predict" id="but"
+                    style="margin-left: 600px;">
+            </form>
+        </div>
+
+
+        <div id=deppr style="display: none;" class ="lineUp">
+            <form method="post">
+
+                <input type="hidden" name="AnxbuttonClicked" id="AnxbuttonClicked" value="false">
+                <input type="hidden" name="DepbuttonClicked" id="DepbuttonClicked" value="false">
+
+                <div class="row">
+                    <div class="col-9">
+                        <a style="color: white; font-weight: 1000;">
+                            How much will you rate your Internet Addiction
+                        </a>
+                    </div>
+                    <div class="col-3">
+                        <select name="intval"
+                            style="border-radius: 5px; color: white; background-color: rgb(82, 80, 80);">
+                            <option>Normal</option>
+                            <option>Mild</option>
+                            <option>Moderate</option>
+                            <option>Severe</option>
+                        </select>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-9">
+                        <a style="color: white;font-weight: 1000;">
+                            How much will you rate your Anxiety
+                        </a>
+                    </div>
+                    <div class="col-3">
+                        <select name="anxval"
+                            style="border-radius: 5px; color: white; background-color: rgb(82, 80, 80);">
+                            <option>Normal</option>
+                            <option>Mild</option>
+                            <option>Moderate</option>
+                            <option>Severe</option>
+                        </select>
+                    </div>
+                </div>
+                <br><br><br><br>
+                <input class="btn btn-lg btn-secondary" type="submit" value="Predict" id="but"
+                    style="margin-left: 600px;">
+            </form>
+        </div>
+        <br><br><br>
+        {% if predict %}
+        <p class="lineUp"> Your predicted {{disease}} level is {{predict}}</p>
+        {% endif %}
+        <br>
+    </div>
+</body>
+
+</html>

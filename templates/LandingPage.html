@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
 
 <head>
@@ -7,18 +6,79 @@
     </title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="{{url_for('static',filename ='css/LandingStyle.css') }}">
-    <script src="{{ url_for('static', filename='js/LandingScript.js') }}"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/LandingStyle.css') }}">
 </head>
 
 <body>
+    <div class="head">
+        <h2>DepressedMe</h2>
+        <nav>
+            <ul>
+                <li><a href="#intr">Home</a></li>
+                <li><a href="#aus">About</a></li>
+                <li><a href="#predd">Predictions</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <br>
+    </div>
+    <br><br><br><br><br><br>
     <div class="container">
+        <div class="intro" id="intr">
+            <div class="row">
+                <div class="col-6">
+    
+                </div>
+                <div class="col-6" id="txt">
+                    <h1 class="hed">DepressedMe - The Place to Predict</h1><br>
+                    <p>Empowering individuals to understand the impact of technology on mental well-being through personalized predictions</p>
+                </div>
+            </div>
+        </div>
+        <br><br><br><br><br><br><br>
+        <div class="abt-us" id="aus">
+            <div class="row">
+                <div class="col-6">
+                    <h1>About Us</h1><br>
+                    <p>Greetings from DepressedMe! We offer insights into your online behaviours and mental health which has been designed to address the individual issues faced by everyone.</p>
+                </div>
+                <div class="col-6">
+                    
+                </div>
+            </div>
+        </div>
+        <br><br><br><br><br><br><br>
+        <div class="pred" id="predd">
+            <div class="row">
+                <div class="col-6">
+                    <h1>Get Your Predictions!</h1><br>
+                    <p><h4>Quick Prediction :</h4></p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        This option provides a fast and convenient option for obtaining predictions by answering a limited number of questions. Ideal for those seeking a quick assessment of their depression and anxiety levels.</p>
+                </div>
+                <div class="col-6">
+                    <br><br><br>
+                    <p><h4>In-depth Prediction :</h4></p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        This option offers a comprehensive prediction experience by providing a more detailed analysis through a series of 35 questions. Recommended for individuals who prefer a thorough evaluation for accurate insights into their depression and anxiety levels.</p>
+                        <br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <p style="text-align: center;">
+                        <a href="PredictionPage.html" class="pbut"><button class="butt" style="height:75px;width:150px">Quick Prediction</button></a>
+                    </p>
+                </div>
+                <div class="col-6">
+                    <p style="text-align: center;">
+                        <a href="AccurateFormPage.html" class="pbut"><button class="butt" style="height:75px;width:150px">In-depth Prediction</button></a>
+                    </p> 
+                </div>
+            </div>
+        </div>
         <br><br>
-        <p style="text-align: center;"><a href="PredictionPage.html"><button class=grey style="height:75px;width:150px">Prediction Page
-        </button></a></p>
-        <p>hi</p>
-        <p style="text-align: center;"><a href="AccurateFormPage.html"><button class=grey style="height:75px;width:150px">Form Page
-        </button></a></p>
+               
     </div>
 </body>
 

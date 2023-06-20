@@ -1,12 +1,97 @@
-button{
-    background-color: black;
+*::-webkit-scrollbar {
+    width: 12px;
+}
+  
+*::-webkit-scrollbar-track {
+    background: rgb(116, 116, 116);
+}
+  
+*::-webkit-scrollbar-thumb {
+    background-color: rgb(44, 44, 44);
+}
+  
+.abt-us, .intro, .pred{
+    background-color: #33333344;;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.hed {
+    font-size: 3.5em;
+}
+
+body {
+    background-color: #ffffff;
+}
+ul li {
+    list-style-type:none;
+    margin-right: 10px;
+    display: inline;
+    color: #fff;
+
+}
+a {
+    text-decoration: none;
+    color: #d4c9c9;
+}
+a:hover {
+    color: #ffffff;
+}
+a:active {
+    color: rgb(86, 250, 168);
+}
+.head {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+  
+.head h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav {
+    float: right;
+    display: block;
+}
+
+h2 {
+    float: left;
+}
+
+.intro p, .abt-us p, .pred p {
+    font-size:large;
+    font-weight: 500;
+    color: #363636;
+    width: 80%;
+}
+
+.intro h1, .abt-us h1, .pred h1 {
+    font-family:inherit;
+    font-weight: 700;
+}
+
+.butt{
     color: white;
-    border-radius: 20px;   
+    background-color: rgb(78, 78, 78);
+    border-radius: 100px;
+    border: black solid 2px;
+    font-size:large;
+    font-family: monospace;
+    font-weight: 300;
 }
-button:hover{
-    background-color: blue;
+
+h4 {
+    font-weight: 600;
 }
-button:active{
-    background-color: aqua;
-    color: red;
+
+.butt:hover{
+    color: rgb(177, 177, 177);
+    background-color: rgb(119, 119, 119);
+}
+
+.butt:active{
+    color: rgb(255, 255, 255);
+    background-color: rgb(7, 7, 7);
 }

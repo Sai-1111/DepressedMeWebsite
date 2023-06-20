@@ -64,11 +64,25 @@ h2 {
     float: left;
 }
 
-.intro p, .abt-us p, .pred p {
+.intro p {
     font-size:large;
     font-weight: 500;
     color: #363636c6;
     width: 80%;
+}
+
+.abt-us p {
+    font-size:large;
+    font-weight: 500;
+    color: #363636c6;
+    width: 100%;
+}
+
+.pred p {
+    font-size:large;
+    font-weight: 500;
+    color: #363636c6;
+    width: 100%;
 }
 
 .intro h1, .abt-us h1, .pred h1 {

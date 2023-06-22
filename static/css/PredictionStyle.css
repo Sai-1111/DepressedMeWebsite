@@ -19,7 +19,7 @@ a {
 
 p {
     text-align: center;
-    font-family: cursive;
+    font-family: monospace;
     font-size: 40px;
     color: white;
 }
@@ -27,7 +27,7 @@ p {
 #but {
     height: 50px;
     width: 100px;
-    font-family: cursive;
+    font-family: monospace;
     background-color: black;
     color: white;
 }
@@ -41,7 +41,7 @@ p {
 #dep_button {
     height: 50px;
     width: 100px;
-    font-family: cursive;
+    font-family: monospace;
 }
 
 #anx_button {

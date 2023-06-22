@@ -14,7 +14,6 @@
     background-color: #33333344;
     border-radius: 20px;
     padding: 80px;
-    position: relative;
 }
 
 
@@ -46,7 +45,6 @@ a:active {
     background-color: #333;
     color: #fff;
     padding: 20px;
-    position:fixed;
     width: 100%;
 }
   

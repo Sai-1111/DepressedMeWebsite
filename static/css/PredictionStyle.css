@@ -5,9 +5,8 @@ b {
 }
 
 body {
-    background-image: url("https://cdn.discordapp.com/attachments/1091705966040453172/1119164691080548382/background.jpg");
-    background-size:auto;
-    background-repeat: no-repeat;
+    background-image: url("https://img.freepik.com/free-photo/gray-painted-background_53876-94041.jpg");
+    background-size:relative;
 }
 
 a {
@@ -26,7 +25,7 @@ p {
 
 #but {
     height: 50px;
-    width: 100px;
+    width: 125px;
     font-family: monospace;
     background-color: black;
     color: white;

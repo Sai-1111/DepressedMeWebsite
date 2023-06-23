@@ -16,6 +16,14 @@
     padding: 80px;
 }
 
+#message{
+    text-align: center;
+    background-color: #33333344;
+    border-radius: 20px;
+    padding: 80px;
+    font-size: 3.5em;
+    font-weight: bold;
+}
 
 .hed {
     font-size: 3.5em;

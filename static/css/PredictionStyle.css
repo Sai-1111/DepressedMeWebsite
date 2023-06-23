@@ -5,8 +5,8 @@ b {
 }
 
 body {
-    background-image: url("https://img.freepik.com/free-photo/gray-painted-background_53876-94041.jpg");
-    background-size:relative;
+    background-image: url("https://cdn.pixabay.com/photo/2014/05/24/00/07/woven-cloth-352481_1280.jpg");
+    background-size:cover;
 }
 
 a {

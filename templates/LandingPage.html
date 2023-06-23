@@ -15,9 +15,15 @@
 
 
 <body>
-    <div class="container">
-        <p id="message" style="display: none;">Please use this website on a desktop :(</p>
+    <div class="container" id = "message" style ="display:none;">
+        <div class="row">
+            <img src="{{ url_for('static', filename='Gif.gif') }}" style=" height:100%;  width:100%;">
+        </div>
+        <div class="row">
+            <p>Please use this website on a desktop :(</p>
+        </div>
     </div>
+
     <div class="head" id = "heading" style="display : block;">
         <img src="{{ url_for('static', filename='Logo.png') }}" style="height: 48px; width: 250px;">
         <nav>
